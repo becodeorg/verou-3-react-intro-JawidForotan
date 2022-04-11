@@ -1,17 +1,15 @@
-function App() {
-  const message = "Hello";
-  const person = "Jawid";
-  const language = "REACT";
-  const courseName = "BeCode";
+import Content from "./Content";
+import Footer from "./Footer";
+import Header from "./Header";
 
+const App = () => {
   return (
     <div className="App">
-      <h1>{message}</h1>
-      <p>
-        {person} Learns {language} at {courseName}
-      </p>
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

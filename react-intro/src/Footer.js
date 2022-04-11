@@ -1,14 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-
 const Footer = (props) => {
+  const date = new Date();
   return (
     <footer>
-      <p>Powered by REACT</p>
+      <p>
+        &copy; <strong>REACT </strong> {date.getFullYear()}
+      </p>
     </footer>
   );
 };
-
-Footer.propTypes = {};
 
 export default Footer;

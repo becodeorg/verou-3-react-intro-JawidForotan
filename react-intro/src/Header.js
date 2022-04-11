@@ -5,9 +5,7 @@ const Header = (props) => {
   return (
     <div>
       <nav>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Info</a>
+        <h1>MY SIMPLE ToDo APP</h1>
       </nav>
     </div>
   );
