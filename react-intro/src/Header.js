@@ -5,7 +5,7 @@ const Header = (props) => {
   return (
     <div>
       <nav>
-        <h1>MY SIMPLE ToDo APP</h1>
+        <h1>ToDo APP</h1>
       </nav>
     </div>
   );

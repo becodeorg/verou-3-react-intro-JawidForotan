@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(219, 219, 219);
 }
 
 code {
@@ -30,6 +30,9 @@ nav {
 }
 .content h3 {
   text-align: center;
+  border: 2px dashed;
+  padding: 8px;
+  margin-bottom: 30px;
 }
 .content input {
   margin-right: 10px;
@@ -37,17 +40,37 @@ nav {
   border: none;
   padding: 10px;
 }
-.content button{
+.add-btn{
   margin-top: 10px;
   padding: 5px;
-  border-radius: 20px;
-  border: none;
+  border-radius: 5px;
+  border: 1px solid black;
   cursor: pointer;
-  background-color: rgb(5, 159, 5);
+  background-color: rgb(130, 194, 3);
 }
 .content button:hover{
-  background-color: rgb(4, 248, 4);
-  border: 1px solid black;
+  background-color: rgb(168, 250, 4);
+  border: 1px solid white;
+}
+.ul-todo{
+  background-color: rgb(160, 161, 161);
+  width: 60%;
+  margin-top: 50px;
+  
+}
+.ul-todo li{
+  background-color: rgb(168, 250, 4);
+  margin: 10px;
+  padding: 10px;
+ 
+}
+.delete{
+  float: right;
+  background-color: black;
+}
+.delete:hover{
+  background-color: rgb(160, 161, 161);
+  cursor: pointer;
 }
 footer {
   height: 40px;

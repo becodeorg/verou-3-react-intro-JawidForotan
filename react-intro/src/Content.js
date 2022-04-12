@@ -5,29 +5,40 @@ const Content = () => {
 
   const addToDo = () => {
     if (!newTodo) {
-      alert("Put a value");
+      alert("Add a todo, please");
       return;
     }
 
-    const item = { value: newTodo };
+    const item = { id: Math.floor(Math.random() * 1000), value: newTodo };
     setItems((oldList) => [...oldList, item]);
     setNewTodo("");
   };
 
+  function deleteTodo(id){
+    const newArray = items.filter((item) => item.id !== id);
+    setItems(newArray);
+  };
+
   return (
     <main className="content">
-      <h3>Add todo</h3>
+      <h3>Add your todo's</h3>
       <input
         type="text"
-        placeholder="Add todo"
+        placeholder="Todo"
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
       />
 
-      <button onClick={() => addToDo()}>Add ToDo</button>
-      <ol>
+      <button className="add-btn" onClick={() => addToDo()}>
+        Add ToDo
+      </button>
+      <ol className="ul-todo">
         {items.map((item) => {
-          return <li>{item.value}</li>;
+          return (
+            <li key={item.id}>
+              {item.value} <button onClick={() => deleteTodo(item.id)} className="delete">❌</button>
+            </li>
+          );
         })}
       </ol>
     </main>
