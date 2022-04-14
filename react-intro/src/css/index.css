@@ -13,15 +13,21 @@ code {
     monospace;
 }
 .navbar {
-  height: 70px;
   width: 100%;
-  background-color: aqua;
+  background-color: rgb(94, 139, 3);
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 25px;
 }
-.navbar .link {
-  padding: 15px;
+.link {
+  padding: 20px 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link:hover {
+  background-color: black;
 }
 
 .content {
@@ -77,7 +83,7 @@ code {
 }
 footer {
   height: 40px;
-  background-color: rgb(73, 72, 72);
+  background-color: rgb(94, 139, 3);
   color: white;
   display: flex;
   justify-content: center;
