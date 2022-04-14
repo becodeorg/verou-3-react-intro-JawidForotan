@@ -12,13 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-nav {
+.navbar {
+  height: 70px;
+  width: 100%;
+  background-color: aqua;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  background-color: rgb(73, 72, 72);
-  height: 80px;
-  color: rgb(168, 250, 4);
+}
+.navbar .link {
+  padding: 15px;
 }
 
 .content {
@@ -41,7 +44,7 @@ nav {
   padding: 10px;
   width: 200px;
 }
-.add-btn{
+.add-btn {
   margin-top: 10px;
   padding: 5px;
   border-radius: 5px;
@@ -49,28 +52,26 @@ nav {
   cursor: pointer;
   background-color: rgb(130, 194, 3);
 }
-.content button:hover{
+.content button:hover {
   background-color: rgb(168, 250, 4);
   border: 1px solid white;
 }
-.ul-todo{
+.ul-todo {
   background-color: rgb(160, 161, 161);
   width: 60%;
   margin-top: 50px;
   margin-bottom: 100px;
-  
 }
-.ul-todo li{
+.ul-todo li {
   background-color: rgb(168, 250, 4);
   margin: 10px;
   padding: 10px;
- 
 }
-.delete{
+.delete {
   float: right;
   background-color: black;
 }
-.delete:hover{
+.delete:hover {
   background-color: rgb(160, 161, 161);
   cursor: pointer;
 }
