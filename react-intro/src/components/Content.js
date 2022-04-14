@@ -14,17 +14,17 @@ const Content = () => {
     setNewTodo("");
   };
 
-  function deleteTodo(id){
+  function deleteTodo(id) {
     const newArray = items.filter((item) => item.id !== id);
     setItems(newArray);
-  };
+  }
 
   return (
     <main className="content">
-      <h3>Add your todo's</h3>
+      <h1>Basic ToDo App</h1>
       <input
         type="text"
-        placeholder="Todo"
+        placeholder="Add your todo's"
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
       />
@@ -36,7 +36,10 @@ const Content = () => {
         {items.map((item) => {
           return (
             <li key={item.id}>
-              {item.value} <button onClick={() => deleteTodo(item.id)} className="delete">❌</button>
+              {item.value}{" "}
+              <button onClick={() => deleteTodo(item.id)} className="delete">
+                ❌
+              </button>
             </li>
           );
         })}
