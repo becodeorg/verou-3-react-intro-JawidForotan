@@ -30,15 +30,16 @@ nav {
 }
 .content h3 {
   text-align: center;
-  border: 2px dashed;
+  border: 2px dashed rgb(59, 87, 3);
   padding: 8px;
   margin-bottom: 30px;
 }
 .content input {
   margin-right: 10px;
   border-radius: 50px;
-  border: none;
+  border: 1px solid black;
   padding: 10px;
+  width: 200px;
 }
 .add-btn{
   margin-top: 10px;
@@ -56,6 +57,7 @@ nav {
   background-color: rgb(160, 161, 161);
   width: 60%;
   margin-top: 50px;
+  margin-bottom: 100px;
   
 }
 .ul-todo li{
